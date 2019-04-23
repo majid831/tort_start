@@ -1,0 +1,157 @@
+@import url("../../admin/css/roba-helper.less");
+
+@defaultDotColor: #DCDCDC;
+@defaultActiveDotColor: #696969;
+@defaultArrowColor: #DCDCDC;
+@defaultActiveArrowColor: #696969;
+
+// Style default gallery.
+.smfi-default-gallery-container {
+	.smfi-default-gallery-img {
+		
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		
+		.addPadding(1);
+		
+		/* ### MEDIA QUERIES ### */
+		/* Small displays */
+		@media screen and (min-width: 576px) {
+			width: 50%;
+		}
+
+		/* Medium displays */
+		@media screen and (min-width: 768px) {
+			width: 33.33%;
+		}
+
+		/* Large displays */
+		@media screen and (min-width: 992px) {
+		}
+
+		/* Extra large displays */
+		@media screen and (min-width: 1200px) {
+			width: 25%;
+		}
+	}
+}
+
+// Style default slider.
+.smfi-default-slider-container {
+	
+	position: relative;
+	
+	margin: auto;
+	.addMarginBottom(3);
+	
+	.smfi-default-slider-slide {
+		display: none;
+	
+		.smfi-default-slider-img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	
+	.smfi-default-slider-prev, .smfi-default-slider-next {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		
+		width: auto;
+		
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		
+		.addFontSize(2);
+		font-weight: bold;
+		color: @defaultArrowColor;
+	  
+		.addPadding(0);
+		
+		&:hover {
+			color: @defaultActiveArrowColor;
+		}
+		
+		&:focus {
+			color: @defaultActiveArrowColor;
+			outline: none;
+		}
+	}
+	
+	/* Position the "previous button" to the left */
+	.smfi-default-slider-prev {
+		left: 10px;
+	}
+	
+	/* Position the "next button" to the right */
+	.smfi-default-slider-next {
+		right: 10px;
+	}
+	
+	.smfi-default-slider-dot-container {
+		
+		text-align: center;
+		
+		.smfi-default-slider-dot {
+			
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			
+			background-color: @defaultDotColor;
+			border-radius: 50%;
+			cursor: pointer;
+			
+			.addMarginTop(0.75);
+			.addMarginLeft(0.15);
+			.addMarginRight(0.15);
+			
+			&:hover {
+				background-color: @defaultActiveDotColor;
+			}
+
+			&:focus {
+				background-color: @defaultActiveDotColor;
+				outline: none;
+			}
+			
+			&.smfi-default-slider-dot-active {
+				background-color: @defaultActiveDotColor;
+			}
+		}
+	}
+	
+	.smfi-default-slider-fade-in-slide {
+		/* The name of the animation */
+		animation-name: fadeInSmfiDefaultSliderAnimation;
+		-webkit-animation-name: fadeInSmfiDefaultSliderAnimation; 
+		
+		/* The duration of the animation */
+		animation-duration: 3.5s; 
+		-webkit-animation-duration: 3.5s;
+		
+		/* Make the element visible */
+		visibility: visible; 
+	}
+}
+
+/* Go from 0% to 100% opacity */
+@keyframes fadeInSmfiDefaultSliderAnimation {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    } 
+}
+@-webkit-keyframes fadeInSmfiDefaultSliderAnimation {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}

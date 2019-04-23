@@ -1,0 +1,23 @@
+<svg width="16.933mm" height="16.933mm" version="1.1" viewBox="0 0 16.933334 16.933334" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="marker1899" overflow="visible" orient="auto">
+   <path transform="matrix(-1.1,0,0,-1.1,-1.1,0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#555d66" fill-rule="evenodd" stroke="#555d66" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Lend" overflow="visible" orient="auto">
+   <path transform="matrix(-1.1,0,0,-1.1,-1.1,0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#555d66" fill-rule="evenodd" stroke="#555d66" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1301" overflow="visible" orient="auto">
+   <path transform="matrix(1.1,0,0,1.1,1.1,0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#555d66" fill-rule="evenodd" stroke="#555d66" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1301-7" overflow="visible" orient="auto">
+   <path transform="matrix(1.1,0,0,1.1,1.1,0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#555d66" fill-rule="evenodd" stroke="#555d66" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <g transform="translate(-42.857 -157.44)">
+  <rect x="42.857" y="157.44" width="16.933" height="16.933" fill="#fff" opacity=".85" style="paint-order:markers fill stroke"/>
+  <g transform="matrix(.17033 0 0 .17033 35.557 144.67)" fill="none" stroke="#555d66" stroke-width="2.2368">
+   <path d="m46.596 124.66h91.937" marker-end="url(#marker1899)" marker-start="url(#marker1301)"/>
+   <path d="m92.565 170.63v-91.937" marker-end="url(#Arrow2Lend)" marker-start="url(#marker1301-7)"/>
+  </g>
+ </g>
+</svg>

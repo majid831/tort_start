@@ -1,0 +1,54 @@
+#smfi-content-container {
+	.smfi-img-container {
+		.smfi-img-slot {
+			position: relative;
+			float: left;
+			
+			.smfi-img-slot-num {
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				
+				transform: translateY(-50%);
+				font-size: 40px;
+				color: rgba(0, 0, 0, 0.1);
+				text-align: center;
+			}
+			
+			&:after {
+				display: block;
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				height: 90%;
+				width: 90%;
+				outline: 2px dashed rgba(85, 93, 102, 1);
+			}
+		}
+		
+		.smfi-img-wrapper {
+			&.smfi-img-dragged {
+				opacity: 0;
+			}
+			.smfi-move-icon {
+				position: absolute;
+				@imgWrapperPaddingTop: 10px;
+				@imgPadding: 16px;
+				top: 5px + @imgWrapperPaddingTop + @imgPadding;
+				right: 5px + @imgPadding;
+				width: 64px;
+				height: 64px;
+				
+				background-image: url("../images/move_icon.svg");
+				background-size: contain;
+				
+				@media screen and (min-width: 769px) {
+					width: 32px;
+					height: 32px;
+				}
+			}
+		}
+	}
+}
