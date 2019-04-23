@@ -4,8 +4,7 @@
 */
 get_header();
 ?>
-    <h2>testing the detail and work</h2>
-    <h3>checking another example</h3>
+    <h2>123</h2>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<?php
